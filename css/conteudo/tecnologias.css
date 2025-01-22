@@ -1,0 +1,22 @@
+.tecnologias {
+  text-align: center;
+  padding-top: 40px;
+}
+.tecnologias > p {
+  padding-top: 20px;
+}
+.tecnologias ul {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.tecnologias li {
+}
+.tecnologias li > p{
+  display: block;
+  padding-top: 10px;
+}
+.tecnologias li img {
+  width: 60px;
+  padding-top: 60px;
+}

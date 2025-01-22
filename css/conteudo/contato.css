@@ -1,0 +1,50 @@
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-top: 60px;
+}
+.contato-conteudo p {
+  padding-top: 10px;
+}
+.contato-conteudo p > a,
+span {
+  text-decoration: underline #9fc131;
+}
+.contato-conteudo p > img {
+  padding-left: 2px;
+  margin-bottom: -4px;
+}
+.contato-redes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 20px;
+}
+.contato-redes img {
+  width: 30px;
+}
+.contato-formulario input {
+  height: 25px;
+}
+.contato-formulario input,
+textarea {
+  width: 400px;
+  resize: none;
+  background-color: #2e2e2e;
+  border: none;
+  border-radius: 1px;
+}
+.contato-formulario p {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+button {
+  background-color: #9fc131;
+  margin-top: 10px;
+  padding: 7px 14px;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
