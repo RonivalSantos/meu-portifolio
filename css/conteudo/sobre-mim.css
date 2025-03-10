@@ -1,0 +1,14 @@
+.sobre-mim{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 60px;
+  gap: 20px;
+}
+.sobre-mim > img{
+  width: 400px;
+  border-radius: 35% 20% 45% 20%;
+  box-shadow: 0px 0px 8px 3px #ffffff86;
+}
+.sobre-mim-conteudo p{
+padding-top: 20px;
+}

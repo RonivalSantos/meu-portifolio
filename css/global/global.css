@@ -1,0 +1,30 @@
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: #000000;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+input,
+textarea {
+  margin: 0px;
+}
+hr {
+  margin-top: 80px;
+  border-color: #daf22724;
+  box-sizing: border-box;
+  max-width: 1200px;
+}

@@ -1,0 +1,15 @@
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/* utilidades */
+@import "./utilidades/componentes.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
+
+/* conteudo */
+@import "./conteudo/introducao.css";
+@import "./conteudo/tecnologias.css";
+@import "./conteudo/projetos.css";
+@import "./conteudo/sobre-mim.css";
+@import "./conteudo/contato.css";
