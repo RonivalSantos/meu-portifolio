@@ -30,3 +30,39 @@ header {
 .header ul a:hover {
   background-color: #daf2272e;
 }
+#mobile-menu,
+#mobile-btn {
+  display: none;
+}
+#mobile-menu.ativo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+#mobile-menu.ativo li {
+  text-align: center;
+  padding-top: 5px;
+}
+.close {
+  display: none;
+}
+#mobile-btn.trocar .abrir {
+  display: none;
+}
+#mobile-btn.trocar .close {
+  display: block;
+}
+
+@media screen and (max-width: 1170px) {
+  .header-menu {
+    display: none;
+  }
+  #mobile-btn {
+    border: none;
+    display: block;
+    background-color: transparent;
+    cursor: pointer;
+    
+  }
+}
