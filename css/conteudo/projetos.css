@@ -12,10 +12,10 @@
 }
 .projetos-conteudo {
   padding-top: 80px;
-  
 }
 .projeto-conteudo {
   width: 300px;
+  height: 400px;
   background-color: #ffffff;
   box-shadow: 0px 0px 8px 2px #ffffff86;
   border-radius: 4px;
@@ -57,4 +57,25 @@
   background-color: #dbf227;
   padding: 10px 15px;
   border-radius: 20px;
+}
+.todos-projetos {
+  text-align: center;
+  padding-top: 60px;
+}
+.todos-projetos a {
+  background: linear-gradient(to bottom, #9fc131, #dbf227);
+  padding: 7px 15px;
+  border-radius: 20px;
+  color: #000;
+}
+@media screen and (max-width: 600px) {
+  .projetos-texto > h2 {
+    font-size: 1.8rem;
+  }
+  .projetos-conteudo {
+    padding-top: 30px;
+  }
+  .projeto-escondido {
+    display: none;
+  }
 }

@@ -1,0 +1,5 @@
+@media screen and (max-width: 600px) {
+  .projetos-todos  .projeto-escondido {
+    display: block;
+  }
+}

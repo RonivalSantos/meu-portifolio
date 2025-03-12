@@ -42,4 +42,22 @@
   padding-right: 5px;
   justify-items: center;
 }
-
+@media screen and (max-width: 900px) {
+  .introducao {
+    padding-top: 20px;
+  }
+  .introducao, .introducao-conteudo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .introducao-conteudo > h1 {
+    font-size: 2.5rem;
+  }
+  .introducao-conteudo > p {
+    font-size: 1rem;
+  }
+} 
