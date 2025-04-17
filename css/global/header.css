@@ -2,7 +2,7 @@ header {
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 300;
+  z-index: 2000;
   background-color: black;
   box-shadow: 0px 0px 7px -5px rgba(255, 255, 255, 0.896);
 }
@@ -30,20 +30,58 @@ header {
 .header ul a:hover {
   background-color: #daf2272e;
 }
-#mobile-menu,
+
 #mobile-btn {
   display: none;
 }
-#mobile-menu.ativo {
+/* Esconde o menu e coloca ele fora da tela */
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  padding-top: 80px;
+  right: -100%; /* Começa fora da tela */
+  width: 100%; /* Ajuste para maior ou menor */
+  height: 60%;
+  background: rgba(0, 0, 0, 0.9); /* Fundo escuro */
   display: flex;
   flex-direction: column;
   gap: 15px;
   align-items: center;
+  justify-content: center;
+  transition: right 0.4s ease-in-out; /* Animação suave */
+  z-index: -1; /* Para garantir que fique sobre o conteúdo */
+  border-bottom: 1px solid #c2c2c2ac;
 }
-#mobile-menu.ativo li {
-  text-align: center;
-  padding-top: 5px;
+/* Menu visível */
+#mobile-menu.ativo {
+  right: 0;
 }
+#mobile-menu li {
+  display: flex;
+  gap: 10px;
+  color: #fff;
+}
+
+#mobile-menu li a {
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+#mobile-menu li a:hover {
+  color: #d6fd51;
+}
+.menu-mobile-contatos {
+  display: flex;
+  gap: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #c2c2c2ac;
+}
+.menu-mobile-contatos li img {
+  width: 30px;
+  background-color: #202020;
+  border-radius: 16px;
+  padding: 10px;
+}
+
 .close {
   display: none;
 }
@@ -53,8 +91,26 @@ header {
 #mobile-btn.trocar .close {
   display: block;
 }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 900;
+}
 
-@media screen and (max-width: 1170px) {
+/* Torna a overlay visível quando o menu abre */
+.overlay.ativo {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 1170px) {
   .header-menu {
     display: none;
   }
@@ -63,5 +119,10 @@ header {
     display: block;
     background-color: transparent;
     cursor: pointer;
+  }
+}
+@media screen and (max-width: 600px) {
+  #mobile-menu {
+    padding-top: 40px;
   }
 }
